@@ -55,6 +55,7 @@ footer .col-sm-2 .text-muted {
     background-color: white;
     padding: 25px 25px 25px 25px;
     box-shadow: grey;
+    height: 95%;
 }
 
 .card-tittle h3 {
@@ -74,7 +75,13 @@ footer .col-sm-2 .text-muted {
     padding: 22vmin 22vmin;
     background-repeat: none;
     background-position-y: -25rem;
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
 
+.download:hover {
+    filter: grayscale(0);
+    background-position-y: -30rem;
 }
 
 .download h1 {
@@ -93,7 +100,8 @@ footer .col-sm-2 .text-muted {
 .download .btn {
     background-color: orange;
     border-radius: 0;
-    padding: 3vmin 10vmin;
+    padding: 1.5vmin 6vmin;
+    transition: 0.3s;
 }
 
 .download a:hover {
@@ -122,6 +130,10 @@ footer .col-sm-2 .text-muted {
     font-size: 1rem;
 }
 
+.project-image img {
+    height: 95%;
+}
+
 .ourcustomer {
     padding-bottom: 10vmin;
 }
@@ -137,4 +149,11 @@ footer .col-sm-2 .text-muted {
 
 .customer-image img {
     margin: 1vmin;
+    filter: grayscale(100%);
+    transition: 0.4s;
+
+}
+
+.customer-image img:hover {
+    filter: grayscale(0);
 }
